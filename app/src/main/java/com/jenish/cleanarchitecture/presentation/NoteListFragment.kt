@@ -8,6 +8,8 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.Navigation
 import com.jenish.cleanarchitecture.R
+import com.jenish.cleanarchitecture.framework.NoteListViewModel
+import kotlinx.android.synthetic.main.note_detail_fragment.view.*
 import kotlinx.android.synthetic.main.note_list_fragment.*
 
 class NoteListFragment : Fragment() {
@@ -27,6 +29,7 @@ class NoteListFragment : Fragment() {
 
         fabCreate.apply {
             setOnClickListener {
+
                 goToDetailNote()
             }
         }
